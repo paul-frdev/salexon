@@ -1,0 +1,15 @@
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
+
+%exo2-400 {
+  font-family: 'exo2-regular';
+  font-weight: 400;
+}
+%exo2-500 {
+  font-family: 'exo2-semiBold';
+  font-weight: 500;
+}
