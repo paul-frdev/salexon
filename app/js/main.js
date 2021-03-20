@@ -1,5 +1,23 @@
 $(function () {
 
+  $('.header-top__lang-link').on('click', function (e) {
+    e.preventDefault();
+    $('.header-top__lang-link').removeClass('header-top__lang-link--active');
+    $(this).addClass('header-top__lang-link--active');
+  });
+
+  $('.menu__list-link').on('click', function (e) {
+    e.preventDefault();
+    $('.menu__list-link').removeClass('menu__list-link--active');
+    $(this).addClass('menu__list-link--active');
+  });
+
+  $('.footer-lang__link').on('click', function (e) {
+    e.preventDefault();
+    $('.footer-lang__link').removeClass('footer-lang__link--active');
+    $(this).addClass('footer-lang__link--active');
+  });
+
   $('.tabs__title-item').on('click', function (e) {
 
     e.preventDefault();
@@ -10,18 +28,46 @@ $(function () {
     $($(this).attr('href')).addClass('tabs__content-wrapper--active');
   });
 
-
-  // $('.tabs__content-wrapper').slick({
-  //   arrows: true,
-  //   dots: false,
-  //   prevArrow: '<button type="button" class="slick-prev"><img src="images/icons/slide-left.png" alt="slide left"></button>',
-  //   nextArrow: '<button type="button" class="slick-next"><img src="images/icons/slide-right.png" alt="slide right"></button>',
-  // });
-
-
-  $('.header-top__lang-link').on('click', function () {
-    $('.header-top__lang-link').toggleClass('header-top__lang-link--active');
+  // $('.tabs__content-wrapper').slick('setPosition');
+  // $(".slider").slick('reinit');
+  $('.slick-one').slick({
+    slidesToShow: 1,
+    arrows: true,
+    dots: false,
+    prevArrow: '<button type="button" class="slick-prev"><img src="images/icons/slide-left.png" alt="slide left"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="images/icons/slide-right.png" alt="slide right"></button>',
   });
 
+  $('.slick-two').slick({
+    slidesToShow: 1,
+    arrows: true,
+    dots: false,
+    prevArrow: '<button type="button" class="slick-prev"><img src="images/icons/slide-left.png" alt="slide left"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="images/icons/slide-right.png" alt="slide right"></button>',
+  });
+
+  $('.slick-three').slick({
+    slidesToShow: 1,
+    arrows: true,
+    dots: false,
+    prevArrow: '<button type="button" class="slick-prev"><img src="images/icons/slide-left.png" alt="slide left"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="images/icons/slide-right.png" alt="slide right"></button>',
+  });
+
+  $('.slider-four').slick({
+    slidesToShow: 1,
+    arrows: true,
+    dots: false,
+    prevArrow: '<button type="button" class="slick-prev"><img src="images/icons/slide-left.png" alt="slide left"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="images/icons/slide-right.png" alt="slide right"></button>',
+  });
+  
+  $('.slider-five').slick({
+    slidesToShow: 1,
+    arrows: true,
+    dots: false,
+    prevArrow: '<button type="button" class="slick-prev"><img src="images/icons/slide-left.png" alt="slide left"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="images/icons/slide-right.png" alt="slide right"></button>',
+  });
 
 });
