@@ -242,7 +242,6 @@ body {
   &__inner {
     display: flex;
     justify-content: space-between;
-    padding-top: 125px;
     padding-bottom: 125px;
   }
 
@@ -359,7 +358,24 @@ body {
   }
 
   &__item {
+    position: relative;
     cursor: pointer;
+
+    &::before {
+      position: absolute;
+      content: '';
+      bottom: 91px;
+      right: -84px;
+      width: 71px;
+      height: 43px;
+      background-image: url('../images/icons/elipse-bg.png');
+
+    }
+
+    &:last-child::before {
+      background-image: none;
+    }
+
   }
 
   &__box {
@@ -643,27 +659,25 @@ body {
     }
   }
 
-  &__content-items {
-    display: flex;
-    width: 900px;
-    min-height: 570px;
+  &__content {
+    max-width: 900px;
   }
 
   &__content-wrapper {
-    display: none;
+    display: block;
     width: 900px;
-    height: 0;
+    height: 0px;
     overflow: hidden;
-    border: 2px solid #e39327;
     border-radius: 9px;
 
     &.tabs__content-wrapper--active {
-      display: block;
       height: auto;
+      border: 2px solid #e39327;
     }
   }
 
   &__content-item {
+    display: flex;
     position: relative;
     width: 900px;
     height: 570px;

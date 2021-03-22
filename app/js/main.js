@@ -27,47 +27,22 @@ $(function () {
     $('.tabs__content-wrapper').removeClass('tabs__content-wrapper--active');
     $($(this).attr('href')).addClass('tabs__content-wrapper--active');
   });
-
   // $('.tabs__content-wrapper').slick('setPosition');
   // $(".slider").slick('reinit');
-  $('.slick-one').slick({
+  $('.slider-active').slick({
     slidesToShow: 1,
     arrows: true,
     dots: false,
     prevArrow: '<button type="button" class="slick-prev"><img src="images/icons/slide-left.png" alt="slide left"></button>',
     nextArrow: '<button type="button" class="slick-next"><img src="images/icons/slide-right.png" alt="slide right"></button>',
   });
+  $('.slider-active').slick('setPosition'); 
+  // $(".slider-active").slick('reinit');
+  // $('.slider-active').slick('refresh');
+  // $('.tabs__content-wrapper:not(:first)').hide();
 
-  $('.slick-two').slick({
-    slidesToShow: 1,
-    arrows: true,
-    dots: false,
-    prevArrow: '<button type="button" class="slick-prev"><img src="images/icons/slide-left.png" alt="slide left"></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="images/icons/slide-right.png" alt="slide right"></button>',
-  });
-
-  $('.slick-three').slick({
-    slidesToShow: 1,
-    arrows: true,
-    dots: false,
-    prevArrow: '<button type="button" class="slick-prev"><img src="images/icons/slide-left.png" alt="slide left"></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="images/icons/slide-right.png" alt="slide right"></button>',
-  });
-
-  $('.slider-four').slick({
-    slidesToShow: 1,
-    arrows: true,
-    dots: false,
-    prevArrow: '<button type="button" class="slick-prev"><img src="images/icons/slide-left.png" alt="slide left"></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="images/icons/slide-right.png" alt="slide right"></button>',
-  });
-  
-  $('.slider-five').slick({
-    slidesToShow: 1,
-    arrows: true,
-    dots: false,
-    prevArrow: '<button type="button" class="slick-prev"><img src="images/icons/slide-left.png" alt="slide left"></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="images/icons/slide-right.png" alt="slide right"></button>',
-  });
+  // $('a[data-toggle="tab-2"]').on('shown.bs.tab', function () {
+  //   $('.slick-two').slick('setPosition');
+  // })
 
 });
