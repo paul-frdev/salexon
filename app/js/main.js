@@ -27,8 +27,7 @@ $(function () {
     $('.tabs__content-wrapper').removeClass('tabs__content-wrapper--active');
     $($(this).attr('href')).addClass('tabs__content-wrapper--active');
   });
-  // $('.tabs__content-wrapper').slick('setPosition');
-  // $(".slider").slick('reinit');
+
   $('.slider-active').slick({
     slidesToShow: 1,
     arrows: true,
@@ -37,12 +36,6 @@ $(function () {
     nextArrow: '<button type="button" class="slick-next"><img src="images/icons/slide-right.png" alt="slide right"></button>',
   });
   $('.slider-active').slick('setPosition'); 
-  // $(".slider-active").slick('reinit');
-  // $('.slider-active').slick('refresh');
-  // $('.tabs__content-wrapper:not(:first)').hide();
-
-  // $('a[data-toggle="tab-2"]').on('shown.bs.tab', function () {
-  //   $('.slick-two').slick('setPosition');
-  // })
+  
 
 });
